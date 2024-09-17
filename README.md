@@ -2,6 +2,7 @@
 For project we need controller ESP8266, soil hydrometer sensor LM393 (or any other), analog 8-channel muliplexor CD4051. We have to use analog multiplexor here since ESP8266 contain only one analog input A0, but we want to connect two soil moisture sensors.
 
 <h1>Circuit schema</h1>
+
 ![Picture of schema](schema)
 
 <b>Libs:</b>

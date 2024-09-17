@@ -1,12 +1,14 @@
-Measure soil moisture, temperarure and humidity with ESP-8266-WiFi controller and transmit data to Home Assistant via MQTT protocol. Since ESP8266 has one analog input
-we use miltiplexor CD4051 for possibility connect up to 8 devices which can use analog port A0.
+<h1>This project is about measuring soil moisture in two points and transmit data to Home Assistant via MQTT</h1><br/>
+For project we need controller ESP8266, soil hydrometer sensor LM393 (or any other), analog 8-channel muliplexor CD4051. We have to use analog multiplexor here since ESP8266 contain only one analog input A0, but we want to connect two soil moisture sensors.
 
+<h1>Circuit schema</h1>
 ![Picture of schema](schema)
 
-Libs:
+<b>Libs:</b>
 DHT11 by Author: Dhruba Saha
 PubSubClient by Nick 'O Leary
 
+<h3>Below useful information regarding connecting ESP8266 to Home Assistant, Pinoits of ESP8266 and analog multiplexor CD4051</h3>
 For connecting to HA via MQTT:
 https://www.home-assistant.io/blog/2015/10/11/measure-temperature-with-esp8266-and-report-to-mqtt/
 
@@ -23,6 +25,7 @@ Example of connecting multiplexer CD4051:
 https://www.instructables.com/How-to-Use-Multiple-Analog-Sensors-on-Your-ESP8266/
 
 
+<h1><span style="color:red">Attention!</span></h1>
 In simple terms
 When you are ready to upload your code to the board
 Connect (Serial Converter -> NodeMCU board):
